@@ -1,0 +1,18 @@
+{
+  "name": "21_disney",
+  "version": "1.0.0",
+  "description": "Um clone da lading page do site de streming Disney Plus",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.3"
+  }
+}
