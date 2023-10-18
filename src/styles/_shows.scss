@@ -5,9 +5,13 @@
 
   &__list {
     margin-top: 44px;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+
+    &--is-active {
+      display: grid;
+    }
 
     &__item {
       img {
@@ -24,14 +28,17 @@
     &__button {
       color: variaveis.$corTextoSecundario;
       font-size: 20px;
-      border: none;
+      border: transparent;
       padding-bottom: 5px;
       background: none;
       text-transform: uppercase;
       margin: 0 1vw;
+      cursor: pointer;
+      transition: border-bottom 0.3s ease-in-out;
+      border-bottom: 5px solid transparent;
 
-      &--is--active {
-        border-bottom: 5px solid variaveis.$corTextoSecundario;
+      &--is-active {
+        border-color: variaveis.$corTextoSecundario;
       }
     }
   }
