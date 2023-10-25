@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/dist/css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--is-hidden">
       <div class="header__container">
         <h1>
           <img
@@ -18,10 +18,10 @@
         </h1>
         <ul class="header__links">
           <li class="header__links__item">
-            <a href="#" class="button">Assine agora</a>
+            <a href="#" class="button button--secondary">Assine agora</a>
           </li>
           <li class="header__links__item">
-            <a href="#" class="button">Entrar</a>
+            <a href="#" class="button button--dark">Entrar</a>
           </li>
         </ul>
       </div>
@@ -225,7 +225,13 @@
       </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-      <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão" />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./dist/images/fundo_rei_leao_celular.png"
+        />
+        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão" />
+      </picture>
       <div
         class="image-text-section__text-container image-text-section--image-full-width__text-container"
       >
@@ -394,7 +400,6 @@
           <li class="footer__links__item">
             <div class="language-selector">
               <img src="./dist/images/icones/globe.svg" alt="Globo do mundo" />
-              <!-- <div class="language-selector__dropdown"></div> -->
               <select>
                 <option>English</option>
                 <option selected>Português</option>
