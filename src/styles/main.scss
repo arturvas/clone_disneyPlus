@@ -78,6 +78,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   display: block;
   width: 100%;
   height: 60px;
@@ -85,11 +86,8 @@ body {
   color: variaveis.$corTextoSecundario;
   background-color: #6421ff;
   border: none;
-  cursor: pointer;
   text-transform: uppercase;
   border-radius: 4px;
-  margin-top: 2vw;
-  margin-bottom: 8px;
 }
 
 .image-text-section {
